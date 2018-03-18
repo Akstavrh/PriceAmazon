@@ -48,7 +48,13 @@ public class ParsingHelper {
             //String prod = prodEl.text();
 
             //Parse price and currency ->NO
-            Elements priceEl = doc.select("span.a-size-medium.a-color-price.offer-price.a-text-normal");
+            //Elements priceEl = doc.select("span.a-size-medium.a-color-price.offer-price.a-text-normal");
+
+
+            //NO
+
+            Elements priceEl = doc.select("span#priceblock_ourprice.a-size-medium.a-color-price");
+
             String prod = priceEl.text();
 
            if (prod == null) {
