@@ -1,37 +1,24 @@
 package com.example.android.pricetracker;
 
-import android.app.LoaderManager;
-import android.app.ProgressDialog;
-import android.content.AsyncTaskLoader;
 import android.content.Intent;
-import android.content.Loader;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
-import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.EditText;
-import android.widget.FrameLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.pricetracker.Data.ParsingHelper;
 
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-
-import java.io.IOException;
+;
 
 public class SearchActivity extends AppCompatActivity {
 
@@ -157,7 +144,7 @@ public class SearchActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             String url = strings[0];
             //call to parsingHelper methods
-            String returnedTitle = ParsingHelper.parseProduct(url);
+            String returnedTitle = ParsingHelper.parseAsin(url);
             return returnedTitle;
         }
 
