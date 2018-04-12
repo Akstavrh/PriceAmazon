@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 
 //TODO Animate cancel button
     //TODO Add Swipe functions.
+    //TODO add review graphic
 
 
 public class FavoritesActivity extends AppCompatActivity{

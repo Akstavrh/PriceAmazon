@@ -16,7 +16,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-import com.example.android.pricetracker.Data.ParsingHelper;
+import com.example.android.pricetracker.Utils.ParsingHelper;
 
 ;
 
@@ -144,7 +144,7 @@ public class SearchActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             String url = strings[0];
             //call to parsingHelper methods
-            String returnedTitle = ParsingHelper.parseAsin(url);
+            String returnedTitle = ParsingHelper.parseReviews(url);
             return returnedTitle;
         }
 
